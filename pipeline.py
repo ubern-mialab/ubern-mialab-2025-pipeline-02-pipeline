@@ -1,14 +1,11 @@
-import sys
 import os
-sys.path.insert(0, os.path.join(os.path.dirname(sys.argv[0]), '..'))  # append the MIALab root directory to Python path
-
 import SimpleITK as sitk
+
 import pymia.filtering.filter as fltr
 import pymia.filtering.registration as fltr_reg
 
-import mialab.data.structure as structure
-import mialab.utilities.file_access_utilities as futil
-import exercise.helper as helper
+import util.structure as structure
+import util.file_access_utilities as futil
 
 
 def collect_image_paths(data_dir):
